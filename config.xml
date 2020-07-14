@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+
+<widget xmlns = "http://www.w3.org/ns/widgets"
+xmlns:gap = "http://phonegap.com/ns/1.0"
+id ="com.phonegap.app"
+version = "1.0.0">
+
+<name>Jeje</name>
+<preference name="orientation"   value="portrait"/>
+<preference name="target-device"   value="universal"/>
+<preference name="fullscreen"     value="true"/>
+<preference name="android-installLocation"  value="auto"/>
+<preference name="permissions" value="INTERNET"/>
+
+<icon src="icono/icono.png"/>
+
+</widget>
+

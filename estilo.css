@@ -1,0 +1,85 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	background: #C9F;
+}
+
+h1{
+	font-size: 64px;
+	color: #906;
+}
+
+.jeje{
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.btnS{
+	padding: 2rem 18.4rem;
+	background: #C9C;
+	border: 0.1rem solid #639;
+	cursor: pointer;
+	border-radius: .3rem;
+	color: #609;
+	font-size: 1.6rem;
+	font-weight: 700;
+	text-shadow: .1rem .1rem .1rem #333;
+}
+
+.btn{
+	padding: 3rem 19.4rem;
+	background: #C9C;
+	border: 0.1rem solid #639;
+	cursor: pointer;
+	position: relative;
+	border-radius: .3rem;
+	overflow: hidden;
+}
+
+.btn::before{
+	content: 'NO';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 1.6rem;
+	color: #609;
+	text-transform: uppercase;
+	letter-spacing: .3rem;
+	font-weight: 700;
+	text-shadow: .1rem .1rem .1rem #333;
+	transition: .2s ease;
+}
+
+.btn::after{
+	content: 'SÍ';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(0);
+	font-size: 1.6rem;
+	color: #609;
+	text-transform: uppercase;
+	letter-spacing: .3rem;
+	font-weight: 700;
+	text-shadow: .1rem .1rem .1rem #333;
+	transition: .2s ease;
+	opacity: 0;
+}
+
+.btn:hover::before{
+	transform: translate(-50%, -50%) scale(3);
+	opacity: 0;
+}
+
+.btn:hover::after{
+	transform: translate(-50%, -50%) scale(1);
+	opacity: 1;
+}
